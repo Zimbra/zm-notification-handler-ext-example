@@ -1,0 +1,1 @@
+This is a sample extension to handle a notification called by `notifyExtension`, which is introduced in ZCS-12704 https://github.com/Zimbra/zm-mailbox/pull/1431

@@ -1,0 +1,12 @@
+<project name="sample-extension" default="jar">
+  <import file="../zm-zcs/ant-global.xml" />
+  <property name="jar.file" value="sample-extension.jar"/>
+
+  <target name="jar" depends="compile" description="Creates extension jar file">
+    <antcall target="zimbra-jar">
+      <param name="jar.file" value="${jar.file}" />
+      <param name="implementation.title" value="Sample Extension" />
+      <param name="zimbra.extension.class" value="com.zimbra.cs.example.SampleExtension" />
+    </antcall>
+  </target>
+</project>
