@@ -51,7 +51,7 @@ public class SampleExtension implements ZimbraExtension {
      */
     @Override
     public void destroy() {
-        SampleNotificationHandler.unregister("com.zimbra.cs.service.account.Auth:validate");
-        SampleNotificationHandler.unregister("com.zimbra.cs.service.admin.Auth:validate");
+        ZimbraExtensionNotification.unregister("com.zimbra.cs.service.account.Auth:validate");
+        ZimbraExtensionNotification.unregister("com.zimbra.cs.service.admin.Auth:validate");
     }
 }
